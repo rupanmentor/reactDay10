@@ -14,7 +14,7 @@ const App = () => {
     <div>
       <h1>App Component - {contextValue}</h1>
 
-      <myContext.Provider value={[contextValue, setContextValue]}>
+      <myContext.Provider value={{contextValue, setContextValue}}>
         <CompA />
         <CompB />
       </myContext.Provider>

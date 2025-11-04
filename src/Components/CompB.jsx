@@ -3,7 +3,7 @@ import { myContext } from '../App';
 import CompE from './CompE';
 
 const CompB = () => {
-     const [contextValue, setContextValue] = useContext(myContext)
+     const {contextValue, setContextValue} = useContext(myContext)
 
      const handleSubmit = () =>{
         setContextValue(val=>val-1)

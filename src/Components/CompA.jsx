@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { myContext } from '../App';
 
 const CompA = () => {
-    const [contextValue, setContextValue] = useContext(myContext)
+    const {contextValue, setContextValue} = useContext(myContext)
      
     const handleSubmit = () =>{
         setContextValue(val=>val+1)
